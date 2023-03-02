@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 
 const MainVisual = styled.section`
 position:relative;
-padding: 150px 0;
+padding: 100px 0;
 h2 {
     font-size: 30px;
     font-weight: 500;
@@ -50,6 +50,8 @@ h2 {
 
 const MainSlide = () => {
     const option = {
+        autoplay: true,
+        autoplaySpeed: 2500,
         dots: true,
         arrows: false,
         centerMode: true,

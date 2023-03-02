@@ -16,8 +16,36 @@ const Main = () => {
                 <iframe src="https://player.vimeo.com/video/749442044?h=8fc3f4fb0f&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1" frameborder="">
                 </iframe>
             </section>
-            <section className="MainProduct">
+            <section className="M_Productslide">
                 <MainSlide />
+            </section>
+            <section className="MainBanner">
+                <img src={process.env.PUBLIC_URL + '/img/main02.jpg'} alt="" />
+                <Link to="./05"><button>Shop now</button></Link>
+            </section>
+            <section className="Mainproduct">
+                <h2>New Products</h2>
+                <div className="product">
+                    <figure>
+                        <img src={process.env.PUBLIC_URL + '/img/new01.jpg'} alt="" />
+                        <p>살구 콜라겐 탄력 워시오프 마스크<br />
+                            Apricot Collagen Youth Firming Wash Off Mask<br />
+                            30,000원</p>
+                    </figure>
+                    <figure>
+                        <img src={process.env.PUBLIC_URL + '/img/new02.jpg'} alt="" />
+                        <p>순한 마스크<br />
+                            Mild sheet mask<br />
+                            11,000원</p>
+                    </figure>
+                    <figure>
+                        <img src={process.env.PUBLIC_URL + '/img/new03.jpg'} alt="" />
+                        <p>살구 콜라겐 탄력 마스크<br />
+                            Apricot collagen youth firming ampoule sheet mask<br />
+                            3,000원</p>
+                    </figure>
+
+                </div>
             </section>
         </>
     )
