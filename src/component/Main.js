@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MainSlide from "./MainSlide";
 
 const Main = () => {
     return (
@@ -14,6 +15,9 @@ const Main = () => {
             <section className="MainVideo">
                 <iframe src="https://player.vimeo.com/video/749442044?h=8fc3f4fb0f&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1" frameborder="">
                 </iframe>
+            </section>
+            <section className="MainProduct">
+                <MainSlide />
             </section>
         </>
     )

@@ -101,6 +101,15 @@ header h1 {
 }
 
 
+.MainSlide .itm {
+    padding: 0 10px;
+}
+
+.MainSlide .itm p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 20px;
+}
 
 /* footer */
 
