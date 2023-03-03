@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <footer>
@@ -9,15 +11,15 @@ const Footer = () => {
             </ul>
             <ul>
                 <p>FOLLOW</p>
-                <li class="f_bold">Instagram</li>
-                <li class="f_bold">Facebook</li>
-                <li class="f_bold">Youtube</li>
+                <li class="f_bold"><Link to='https://www.instagram.com/'>Instagram</Link></li>
+                <li class="f_bold"><Link to='https://ko-kr.facebook.com/'>Facebook</Link></li>
+                <li class="f_bold"><Link to='https://www.youtube.com/'>Youtube</Link></li>
             </ul>
             <ul>
                 <p>FAMLIY SITE</p>
-                <li class="f_bold">Club clio</li>
-                <li class="f_bold">English</li>
-                <li class="f_bold">Chinese</li>
+                <li class="f_bold"><Link to='https://clubclio.co.kr/'>Club clio</Link></li>
+                <li class="f_bold"><Link>English</Link></li>
+                <li class="f_bold"><Link>Chinese</Link></li>
                 <span>&copy; 2021 goodal</span>
             </ul>
         </footer>
