@@ -1,3 +1,8 @@
+html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+}
+
 /* header */
 header {
     position: fixed;
@@ -142,6 +147,30 @@ header h1 {
     font-size: 14px;
     line-height: 20px;
     margin: 10px 0 0 0;
+}
+
+
+/* scrolltop */
+.scrolltop {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    font-size: 50px;
+
+}
+
+.scrolltop button {
+    background: inherit;
+    outline: none;
+    border: none;
+}
+
+.scrolltop .stbtn {
+    border: 1px solid #111;
+    background: #111;
+    border-radius: 50%;
+    color: #fff;
+
 }
 
 /* footer */

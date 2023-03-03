@@ -1,8 +1,19 @@
-import { Link, Route } from "react-router-dom";
+import { Link, Route, useLocation, useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
+import Brand from "./Brand";
+
+const Scroll = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        //console.log(pathname);
+    }, [pathname]);
+
+    return null;
+}
 
 const Header = () => {
     const [on, setOn] = useState(false);
@@ -30,6 +41,7 @@ const Header = () => {
 }
 `
 
+
     return (
         <header>
             <TopBanner className={on ? 'on' : ''}>
@@ -39,14 +51,14 @@ const Header = () => {
             <div className="inner">
                 <nav className="nav01">
                     <ul>
-                        <li><Link to="/01">Brand</Link></li>
+                        <li><Link to="/Brand">Brand</Link></li>
                         <li><Link to="/02">Shop</Link></li>
                         <li><Link to="/03" className="blue">Global Store</Link></li>
 
 
                     </ul>
                 </nav>
-                <h1><Link to="/"><img src={process.env.PUBLIC_URL + '/img/logo.jpg'} alt="" /></Link></h1>
+                <h1><a href="./"><img src={process.env.PUBLIC_URL + '/img/logo.jpg'} alt="" /></a></h1>
                 <nav className="nav02">
                     <ul>
                         <li><Link to="/01">Join Us</Link></li>

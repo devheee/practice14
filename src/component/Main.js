@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import MainSlide from "./MainSlide";
 
+import { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom'
+
+
 const Main = () => {
     return (
         <>
@@ -26,27 +30,27 @@ const Main = () => {
             <section className="Mainproduct">
                 <h2>New Products</h2>
                 <div className="product">
-                    <figure>
+                    <Link to='/'> <figure>
                         <img src={process.env.PUBLIC_URL + '/img/new01.jpg'} alt="" />
                         <p>살구 콜라겐 탄력 워시오프 마스크<br />
                             Apricot Collagen Youth Firming Wash Off Mask<br />
                             30,000원</p>
-                    </figure>
-                    <figure>
+                    </figure></Link>
+                    <Link to='/'><figure>
                         <img src={process.env.PUBLIC_URL + '/img/new02.jpg'} alt="" />
                         <p>순한 마스크<br />
                             Mild sheet mask<br />
                             11,000원</p>
-                    </figure>
-                    <figure>
+                    </figure></Link>
+                    <Link to='/'><figure>
                         <img src={process.env.PUBLIC_URL + '/img/new03.jpg'} alt="" />
                         <p>살구 콜라겐 탄력 마스크<br />
                             Apricot collagen youth firming ampoule sheet mask<br />
                             3,000원</p>
-                    </figure>
-
+                    </figure></Link>
                 </div>
             </section>
+
         </>
     )
 }
