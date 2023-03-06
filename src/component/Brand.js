@@ -4,10 +4,7 @@ import Header from "./Header";
 const Brand = () => {
     return (
         <>
-            <Header />
-            <div>
-            </div>
-            <Footer />
+            <div>브랜드</div>
         </>
     )
 }
