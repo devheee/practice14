@@ -26,17 +26,27 @@ header nav ul {
     gap: 20px;
 }
 
-/* 
-header .inner nav ul li:hover::after {
+header .inner nav ul li span {
+    position: relative;
+}
+
+header .inner .nav01 ul li span::after {
     content: "";
-    display: block;
-    margin: auto;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
     height: 1px;
-    width: 0px;
-    margin-bottom: -1px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-} */
+    width: 100%;
+    background: #222;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+header .inner .nav01 ul li span:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
 
 header .nav01 {
     margin: 0 0 0 50px;

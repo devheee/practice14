@@ -42,6 +42,7 @@ const Header = () => {
 `
 
 
+
     return (
         <header>
             <TopBanner className={on ? 'on' : ''}>
@@ -51,18 +52,16 @@ const Header = () => {
             <div className="inner">
                 <nav className="nav01">
                     <ul>
-                        <li><Link to="/Brand">Brand</Link></li>
-                        <li><Link to="/02">Shop</Link></li>
-                        <li><Link to="/03" className="blue">Global Store</Link></li>
-
-
+                        <li><Link to="/Brand"><span>Brand</span></Link></li>
+                        <li><Link to="/02"><span>shop</span></Link></li>
+                        <li><Link to="/03" className="blue"><span>Global Store</span></Link></li>
                     </ul>
                 </nav>
                 <h1><a href="./"><img src={process.env.PUBLIC_URL + '/img/logo.jpg'} alt="" /></a></h1>
                 <nav className="nav02">
                     <ul>
-                        <li><Link to="/01">Join Us</Link></li>
-                        <li><Link to="/02">Community</Link></li>
+                        <li><Link to="/01"><span>Join Us</span></Link></li>
+                        <li><Link to="/02"><span>Community</span></Link></li>
                         <li><Link to="/03"><FiSearch /></Link></li>
                     </ul>
                 </nav>
