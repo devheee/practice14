@@ -52,16 +52,16 @@ const Header = () => {
                     <ul>
                         <li><Link to="/Brand01"><span>Brand</span></Link> </li>
                         <li><Link to="/Shop01"><span>Shop</span></Link></li>
-                        <li><Link to="/03" className="blue"><span>Global Store</span></Link></li>
+                        <li><Link to="/" className="blue"><span>Global Store</span></Link></li>
 
                     </ul>
                 </nav>
                 <h1><a href="./"><img src={process.env.PUBLIC_URL + '/img/logo.jpg'} alt="" /></a></h1>
                 <nav className="nav02">
                     <ul>
-                        <li><Link to="/01"><span>Join Us</span></Link></li>
-                        <li><Link to="/02"><span>Community</span></Link></li>
-                        <li><Link to="/03"><FiSearch /></Link></li>
+                        <li><Link to="/"><span>Join Us</span></Link></li>
+                        <li><Link to="/"><span>Community</span></Link></li>
+                        <li><Link to="/"><FiSearch /></Link></li>
                     </ul>
                 </nav>
             </div>
