@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
-import Brand from "./Brand";
+import Brand from "./Brand_01";
 
 const Scroll = () => {
     const { pathname } = useLocation();
@@ -50,7 +50,7 @@ const Header = () => {
             <div className="inner">
                 <nav className="nav01">
                     <ul>
-                        <li><Link to="/Brand"><span>Brand</span></Link> </li>
+                        <li><Link to="/Brand01"><span>Brand</span></Link> </li>
                         <li><Link to="/02"><span>shop</span></Link></li>
                         <li><Link to="/03" className="blue"><span>Global Store</span></Link></li>
 
