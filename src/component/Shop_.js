@@ -15,7 +15,7 @@ margin: 0 0 30px 0;
 
 const UL = styled.ul`
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
 gap: 30px;
 `
 
