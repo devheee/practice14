@@ -1,5 +1,8 @@
+import { useState } from "react"
+// import InfiniteScroll from "react-infinite-scroll-component"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { DATA } from "../data/data";
 
 const ShopMain = styled.div`
 padding: 150px 0;
@@ -37,10 +40,21 @@ transform: scale(1.2);
 }
 `
 const Shop_ = ({ DATA }) => {
-    console.log(DATA)
     return (
+
         <ShopMain>
             <H2>ALL</H2>
+            {/* <InfiniteScroll
+                dataLength={DATA.length} //This is important field to render the next data
+                next={DATA}
+                hasMore={true}
+                loader={<h4>Loading...</h4>}
+                endMessage={
+                    <p style={{ textAlign: 'center' }}>
+                        <b>Yay! You have seen it all</b>
+                    </p>
+                }
+            > */}
             <UL>
                 {
                     DATA.map(it => {
@@ -58,8 +72,11 @@ const Shop_ = ({ DATA }) => {
                     })
                 }
             </UL>
+            {/* </InfiniteScroll> */}
         </ShopMain>
+
     )
 }
 
 export default Shop_
+
